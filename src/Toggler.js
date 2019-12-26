@@ -1,21 +1,26 @@
 import React, { useState } from "react";
+import useToggle from "./hooks/useToggle";
 
 function Toggler() {
-	const [isHappy, setIsHappy] = useState(true);
-	const [isHeartbroken, setIsHeartbroken] = useState(false);
+	const [isHappy, toggleIsHappy] = useToggle(true);
+	const [isHeartbroken, toggleIsHeartbroken] = useToggle(false);
+	const [isBanana, toggleIsBanana] = useToggle(true);
 
-	const toggleIsHappy = () => {
-		setIsHappy(!isHappy);
-	};
+	/* const [isHappy, setIsHappy] = useState(true);
+  const toggleIsHappy = () => {
+    setIsHappy(!isHappy);
+  }
 
-	const toggleIsHeartbroken = () => {
-		setIsHeartbroken(!isHeartbroken);
-	};
+  const [isHeartbroken, setIsHeartbroken] = useState(false);
+  const toggleIsHeartbroken = () => {
+    setIsHeartbroken(!isHeartbroken);
+  } */
 
 	return (
 		<div>
 			<h1 onClick={toggleIsHappy}>{isHappy ? "😆" : "😭"}</h1>
-			<h1 onClick={toggleIsHeartbroken}>{isHeartbroken ? "💔" : "💖"} </h1>
+			<h1 onClick={toggleIsHeartbroken}>{isHeartbroken ? "💔" : "💖"}</h1>
+			<h1 onClick={toggleIsBanana}>{isBanana ? "🍌" : "🍎"} </h1>
 		</div>
 	);
 }
