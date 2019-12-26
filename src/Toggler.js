@@ -18,9 +18,11 @@ function Toggler() {
 
 	return (
 		<div>
-			<h1 onClick={toggleIsHappy}>{isHappy ? "😆" : "😭"}</h1>
-			<h1 onClick={toggleIsHeartbroken}>{isHeartbroken ? "💔" : "💖"}</h1>
-			<h1 onClick={toggleIsBanana}>{isBanana ? "🍌" : "🍎"} </h1>
+			<h1 onClick={toggleIsHappy}>Happy? {isHappy ? `😆 (true)` : "😭"}</h1>
+			<h1 onClick={toggleIsHeartbroken}>
+				Heartbroken? {isHeartbroken ? "💔" : "💖"}
+			</h1>
+			<h1 onClick={toggleIsBanana}>Banana? {isBanana ? "🍌" : "🍎"} </h1>
 		</div>
 	);
 }
