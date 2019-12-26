@@ -2,9 +2,7 @@ import React, { useState } from "react";
 
 function CounterHooks() {
 	const [count, setCount] = useState(0);
-	//1. the piece of state
-	//2. function to update that piece of state
-	//3. initial value
+	// [state, update function] = initial value
 
 	return (
 		<div>
