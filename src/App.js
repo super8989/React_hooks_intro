@@ -6,6 +6,7 @@ import SimpleFormClass from "./SimpleFormClass";
 import SimpleFormHooks from "./SimpleFormHooks";
 import SimpleFormInputHook from "./SimpleFormInputHook";
 import Clicker from "./Clicker";
+import SWMovies from "./SWMovies";
 
 import "./App.css";
 
@@ -17,8 +18,9 @@ function App() {
 			<Toggler />
 			<SimpleFormClass />
 			<SimpleFormHooks />
-			<SimpleFormInputHook /> */}
-			<Clicker />
+			<SimpleFormInputHook />
+			<Clicker /> */}
+			<SWMovies />
 		</div>
 	);
 }
